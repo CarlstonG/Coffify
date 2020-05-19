@@ -12,9 +12,9 @@
 
 ## 🚀 Quick start
 
-1.  **This is under contruction**
+1.  **This site is under contruction**
 
-    Wiill be use for simple food or coffeeshop.
+    Wiil be used for simple food or coffeeshop.
 
 
 2.  **Start developing.**
