@@ -16,9 +16,7 @@ export default class Menu extends Component {
                 <section className="menu py-5">
                     <div className="container">
                         <title title="Top Menu"/>
-                        {/* categories */}
-                            {/* items  */}
-                            {/* fixed error no netlify data error */}
+                      
                         <div className="row">
                             {this.state.coffeeItems.map(({node})=>{
                                 return(
