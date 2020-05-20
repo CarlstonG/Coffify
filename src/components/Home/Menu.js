@@ -17,7 +17,8 @@ export default class Menu extends Component {
                     <div className="container">
                         <title title="Top Menu"/>
                         {/* categories */}
-                            {/* items */}
+                            {/* items  */}
+                            {/* fix error no netlify data error */}
                         <div className="row">
                             {this.state.coffeeItems.map(({node})=>{
                                 return(
