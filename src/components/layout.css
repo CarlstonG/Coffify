@@ -3,7 +3,7 @@
   --mainYellow: #e78c02;
   --mainGrey: #ece9bc;
   --mainWhite: #ffff;
-  --mainDark: #322;
+  --mainDark: rgb(8, 6, 6);
 }
 
 body {
@@ -17,6 +17,9 @@ h1, h2, h3, h4, h5, h6 {
   !important;
   letter-spacing: 0.25rem !important;
 
+}
+h3 {
+  font-size: 15px;
 }
 .text-yellow{
   color: var(--mainBrow);
@@ -34,8 +37,9 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   background: 
-  linear-gradient(rgba(250, 128, 6, 0.5), rgba(250, 155, 3, 0.5));
+  linear-gradient(rgba(34, 17, 1, 0.5), rgba(252, 251, 250, 0.5));
   background-position: center;
+  opacity: 0.9;
   background-size: cover;
   background-repeat: no-repeat;
   
