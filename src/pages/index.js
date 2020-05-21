@@ -43,7 +43,7 @@ menu:allContentfulCoffeeItem{
       category
       image{
         fixed(width: 50, height: 50){
-          ...GatsbyContentfulFixed_tracedSVG
+          ...GatsbyImageSharpFluid_tracedSVG
         }
         
       }
