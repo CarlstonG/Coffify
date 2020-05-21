@@ -2,15 +2,28 @@ import React, { Component } from 'react'
 import Title from '../Globals/Title'
 import Img from "gatsby-image"
 
+
+const getCategories = items =>{
+    let tempItems = items.map(items => {
+            return items.node.category;
+            
+    });
+    let tempCategories = new Set(tempItems);
+    return tempCategories;
+}
+
 export default class Menu extends Component {
     constructor(props){
         super(props);
         this.state ={
             items: props.items.edges,
-            coffeeItems: props.items.edges
+            coffeeItems: props.items.edges,
+            categories:getCategories(props.items.edges)
         };
     }
     render() {
+       
+        //checking the data is passed: console.log(this.state.categories);
         if (this.state.items.length > 0){
             return (
                 <section className="menu py-5">
@@ -28,9 +41,9 @@ export default class Menu extends Component {
                                             {/* item text*/}
                                             <div className="flex-grow-1 px-3">
                                                 <div className="d-flex justify-content-between">
-                                <h6 className="mb-0">
+                                <h6 className="mb-0 text-blue">
                                     <small>{node.title}</small></h6>
-                                <h6 className="mb-0">
+                                <h6 className="mb-0 text-black">
                                  <small>${node.price}</small></h6>
                                             
                                                 </div>
